@@ -1,2 +1,2 @@
 # SDM
-sequential deep matching model for recommender system at alibaba
+This is an implementation of our model in offline experment, rather than the online official version.
