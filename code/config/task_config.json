@@ -1,0 +1,22 @@
+{
+  "comment": "model config for SDM",
+  "parameters": {
+    "mode":"train",
+    "num_units": 128,
+    "unit_type": "lstm",
+    "num_layers": 2,
+    "num_residual_layers": 1,
+    "forget_bias": 1.0,
+    "dropout": 0.2,
+    "max_gradient_norm": 5.0,
+    "optimizer": "adagrad",
+    "learning_rate": 0.1,
+    "num_samples": 20000,
+    "batch_size": 256,
+    "last_step": 15000000,
+    "loss_by_example": false,
+    "num_buckets": 20,
+    "model": "rnn",
+    "vocab_size": 100000000
+  }
+}
