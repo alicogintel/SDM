@@ -1,5 +1,6 @@
 # SDM
-Code (Python2.7, TF1.4) for the Sequential Deep Matching Model for Recommder System at Taobao. Current version only contains the core code of our model, and we will continuously complete the remaining parts including data processing, evaluation and runing pipline guidance for the public.
+Code (Python2.7, TF1.4) for the Sequential Deep Matching model for Recommender System at Taobao.
+Current version only contains the core code of our model, and we will continuously complete the remaining parts including data processing, evaluation and running pipeline guidance for the public if possible.
 
 ## Datasets
 We will release our offline datasets soon after the approval. The schema of raw data is shown in data/sample_data/.
@@ -9,4 +10,6 @@ We will release our offline datasets soon after the approval. The schema of raw 
 **Taobao Dataset:** Under internal checking procedure.
 
 ## Disclaimer
-This is an implementation in offline experment rather than the online official version.
+This is an implementation on experiment of offline JD dataset rather than the online official version.
+
+There may be differences between results reported in the paper and the released one, because the former one is achieved in distribution tensorflow.
