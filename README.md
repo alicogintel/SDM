@@ -11,5 +11,4 @@ We will release our offline datasets soon after the approval. The schema of raw 
 
 ## Disclaimer
 This is an implementation on experiment of offline JD dataset rather than the online official version.
-
 There may be differences between results reported in the paper and the released one, because the former one is achieved in distribution tensorflow.
