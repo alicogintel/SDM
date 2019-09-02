@@ -119,10 +119,8 @@ class BasicModules:
             embeddings = self.parser.embedding_columns(feature_type="item")
             if self.hparams.item_id_only:
                 encoded = layers.sequence_input_from_feature_columns(
-                    columns_to_tensors={"item_emb": features["item_ids"],
-                                        "shop_emb": features["shop_ids"],
-                                        "brand_emb": features["brand_ids"]},
-                    feature_columns=embeddings[0:3], scope="reuse_embedding")
+                    columns_to_tensors={"item_emb": features["item_ids"]},
+                    feature_columns=[embeddings[0]], scope="reuse_embedding")
             else:
                 encoded = layers.sequence_input_from_feature_columns(
                     columns_to_tensors={"item_emb": features["item_ids"],
@@ -170,7 +168,7 @@ class BasicModules:
             embeddings = self.parser.embedding_columns(feature_type="item")
             feature_names = ["item", "shop", "brand", "cate"]
             if self.hparams.item_id_only:
-                feature_names = feature_names[0:3]
+                feature_names = [feature_names[0]]
             prefer_outputs = []
             for i in range(len(feature_names)):
                 key_emb = feature_names[i] + "_emb"

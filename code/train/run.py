@@ -47,18 +47,16 @@ def main(unused_argv):
 
 def run_validating(hparams, model):
     acc_keys = ["user_id", "ds", "user_embedding_output"]
-    volume = FLAGS.volumes
-    volume = volume.split(",")
-    train_file_list = tf.gfile.ListDirectory(volume[0])
-    test_file_list = tf.gfile.ListDirectory(volume[1])
-    if not train_file_list or len(train_file_list) == 0 or not test_file_list or len(test_file_list) == 0:
-        logging.error("End training directly since no train files or test files!")
-        return
 
     #  user defined function
+    #  you should write your own code here for reading and writing data
     train_file = get_your_train_files()
     test_file = get_your_test_files()
     writer = open_your_test_result_file()
+
+    if not train_file or len(train_file) == 0 or not test_file or len(test_file) == 0:
+        logging.error("End training directly since no train files or test files!")
+        return
 
     logging.info("current_train_file: {}".format(train_file))
     logging.info("current_test_file: {}".format(test_file))

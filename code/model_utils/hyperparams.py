@@ -74,7 +74,7 @@ def create_hparams(task_config):
 
     return TrainingHParams(
         # basic
-        ps_num=task_config.get_config_as_int("ps_num", 20),
+        ps_num=task_config.get_config_as_int("ps_num", 1),
         mode=task_config.get_config("mode", "train"),
         model=task_config.get_config("model", "rnn"),
         num_buckets=task_config.get_config_as_int("num_buckets", 10),
@@ -177,29 +177,17 @@ def create_hparams(task_config):
 
 
 def create_flags(flags):
-    flags.DEFINE_string("tables", "", "tables info")
-    flags.DEFINE_integer("task_index", None, "Worker task index")
-    flags.DEFINE_string("ps_hosts", "", "ps hosts")
-    flags.DEFINE_string("worker_hosts", "", "worker hosts")
-    flags.DEFINE_string("job_name", None, "job name: worker or ps")
-    flags.DEFINE_string("volumes", "", "volumes info")
-    flags.DEFINE_string("checkpointDir", "", "checkpoint_dir")
-
+    flags.DEFINE_string("checkpointDir", "./", "checkpoint_dir")
     flags.DEFINE_string("model", "rnn,self_attn,personal,user_attn,prefer", "model")
     flags.DEFINE_string("mode", "train", "mode")
     flags.DEFINE_string("unit_type", "gru", "unit_type")
-    flags.DEFINE_string("exportDir", None, "export dir")
     flags.DEFINE_string("num_epochs", 10, "num_epochs")
-    flags.DEFINE_string("tables", None, "tables")
     flags.DEFINE_string("batch_size", 256, "batch_size")
     flags.DEFINE_string("num_samples", 2000, "num_samples")
     flags.DEFINE_integer("split_size", 1, "split_size, batch split size, splited_samples share neg_samples")
     flags.DEFINE_integer("last_step", 15000000, "last_step")
-    flags.DEFINE_string("mos", False, "mos switch")
-    flags.DEFINE_string("num_experts", 10, "num_experts")
     flags.DEFINE_string("user_id_embedding_size", 64, "user_id_embedding_size")
     flags.DEFINE_string("num_buckets", 1, "num_buckets")
-    flags.DEFINE_string("output_test_result", None, "output_test_result")
     flags.DEFINE_string("shuffle", True, "shuffle")
     flags.DEFINE_string("loss_by_example", False, "loss_by_example")
     flags.DEFINE_string("user_residual", True, "user layer residual")
@@ -218,7 +206,6 @@ def create_flags(flags):
     flags.DEFINE_integer("train_len", 1430824, "sample lens")
     flags.DEFINE_string("item_fc_trans", False, "itemid+general repre")
     flags.DEFINE_string("self_attn_ffn", False, "self_attn_ffn")
-    flags.DEFINE_string("metric_multi_label", False, "metric_multi_label")
     flags.DEFINE_integer("test_interval", 1, "test_interval")
 
     flags.DEFINE_string("STAMP", False, "short term priority")
