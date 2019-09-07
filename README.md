@@ -1,4 +1,4 @@
-# SDM: SDM: Sequential Deep Matching Model for Online Large-scale Recommender System
+# SDM: Sequential Deep Matching Model for Online Large-scale Recommender System
 Code (Python2.7, TF1.4) of the sequential deep matching (SDM) model for recommender system at Taobao.
 Current version only contains the core code of our model. The processes of data processing and evaluation are executed on our internal cloud platform [ODPS](https://www.alibabacloud.com/campaign/10-year-anniversary).
 
