@@ -2,7 +2,7 @@
 Code (Python2.7, TF1.4) of the sequential deep matching (SDM) model for recommender system at Taobao.
 Current version only contains the core code of our model. The processes of data processing and evaluation are executed on our internal cloud platform [ODPS](https://www.alibabacloud.com/campaign/10-year-anniversary).
 
-Here is the arxiv [link](https://arxiv.org/abs/1909.00385)
+Here is the arxiv [link](https://arxiv.org/abs/1909.00385) (Accepted by CIKM 2019)
 
 Citation:
 ```
