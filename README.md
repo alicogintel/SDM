@@ -6,12 +6,13 @@ Here is the arxiv [link](https://arxiv.org/abs/1909.00385) (accepted by CIKM 201
 
 Citation:
 ```
-@article{SDM2019,
-  title={SDM: Sequential Deep Matching Model for Online Large-scale Recommender System},
+@inproceedings{lv2019sdm,
+  title={SDM: Sequential deep matching model for online large-scale recommender system},
   author={Lv, Fuyu and Jin, Taiwei and Yu, Changlong and Sun, Fei and Lin, Quan and Yang, Keping and Ng, Wilfred},
-  journal={arXiv preprint arXiv:1909.00385},
+  booktitle={Proceedings of the 28th ACM International Conference on Information and Knowledge Management},
+  pages={2635--2643},
   year={2019},
-  url={https://arxiv.org/pdf/1909.00385.pdf}
+  organization={ACM}
 }
 ```
 
@@ -21,7 +22,6 @@ Citation:
 The schema of raw data is shown in data/sample_data/.
 
 **Taobao Dataset:** We will release the dataset after internal checking procedure if possible.
-
 
 ## Disclaimer
 This is an implementation on experiment of offline JD dataset rather than the online official version.
