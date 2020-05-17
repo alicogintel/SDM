@@ -1,7 +1,14 @@
 # SDM: Sequential Deep Matching Model for Online Large-scale Recommender System
+## New Released Code!!!
+[doc](https://zhuanlan.zhihu.com/p/141411747)
+[code](https://github.com/shenweichen/DeepMatch)
+Thanks for the [DeepMatch Group](https://github.com/shenweichen/DeepMatch) Member!
+
+## Demo Code
 Code (Python2.7, TF1.4) of the sequential deep matching (SDM) model for recommender system at Taobao.
 Current version only contains the core code of our model. The processes of data processing and evaluation are executed on our internal cloud platform [ODPS](https://www.alibabacloud.com/campaign/10-year-anniversary).
 
+## Paper
 Here is the arxiv [link](https://arxiv.org/abs/1909.00385) (accepted by CIKM 2019)
 
 Citation:
