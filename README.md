@@ -4,7 +4,7 @@
 
 [Code](https://github.com/shenweichen/DeepMatch)
 
-Thanks for the [DeepMatch Group](https://github.com/shenweichen/DeepMatch) Members!
+Thanks for the [DeepMatch Group](https://github.com/shenweichen/DeepMatch) members!
 
 ## Demo Code
 Code (Python2.7, TF1.4) of the sequential deep matching (SDM) model for recommender system at Taobao.
