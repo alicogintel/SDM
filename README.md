@@ -1,8 +1,6 @@
 # SDM: Sequential Deep Matching Model for Online Large-scale Recommender System
 ## New Released Code!!!
-[Doc](https://zhuanlan.zhihu.com/p/141411747)
-
-[Code](https://github.com/shenweichen/DeepMatch)
+[Doc](https://zhuanlan.zhihu.com/p/141411747) and [Code](https://github.com/shenweichen/DeepMatch)
 
 Thanks for the [DeepMatch Group](https://github.com/shenweichen/DeepMatch) members!
 
