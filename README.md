@@ -25,7 +25,7 @@ Citation:
 }
 ```
 
-## Datasets
+## Dataset
 
 **JD Dataset:** [raw data](https://drive.google.com/open?id=19PemKrhA8j-RZj0i20_j4ERcnzaxl5JZ), [train and test data](https://drive.google.com/open?id=1pam-_ojsKooRLVeOXEvbh3AwJ6S4IZ7B) in the paper (tfrecord).
 The schema of raw data is shown in data/sample_data/.
